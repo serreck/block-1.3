@@ -334,7 +334,7 @@ a {
   width: 40px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: url("../icons/icon_checkstatus.svg") center/50% no-repeat;
+  background: url("./../icons/icon_checkstatus.svg") center/50% no-repeat;
   background-color: #ff3e79;
 }
 
