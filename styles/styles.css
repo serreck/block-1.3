@@ -213,6 +213,10 @@ svg * {
   }
 }
 
+:root {
+  --max-width: 1120px;
+}
+
 body {
   font-family: "TT Lakes";
   font-weight: normal;
@@ -240,6 +244,11 @@ a {
 
 .page {
   position: relative;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin-inline: auto;
 }
 
 .header {
@@ -282,6 +291,7 @@ a {
   position: absolute;
   z-index: 2;
   right: 32px;
+  /* left: auto; */
   display: flex;
   justify-content: end;
   align-items: center;
@@ -369,6 +379,10 @@ a {
   background-color: #ff3e79;
   border-radius: 50%;
   border: none;
+}
+
+.button:hover {
+  background-color: #ff3e786a;
 }
 
 .title {
@@ -492,6 +506,14 @@ a {
 
   .main-side-buttons {
     visibility: hidden;
+  }
+
+  .navigation__list {
+    flex-wrap: nowrap;
+  }
+
+  .navigation {
+    overflow: scroll;
   }
 }
 
